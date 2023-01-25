@@ -1,0 +1,96 @@
+<!--header-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+      <a class="navbar-brand" href="./home">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto ">
+              <li class="nav-item" routerLinkActive="active">
+                  <a class="nav-link" routerLink="./aboutus">AboutUs</a>
+              </li>
+              <li class="nav-item" routerLinkActive="active">
+                  <a class="nav-link" routerLink="./contactus">Contactus</a>
+              </li>
+              <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="./course">Courses</a>
+            </li>
+              <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="./placements">placements</a>
+              </li>
+              <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="./admission">Admission</a>
+              </li>              
+              <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="./login">Login</a>
+            </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+  <router-outlet></router-outlet>
+  
+
+  <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-dark">
+  <section class="">
+    <h4 style="color:rgb(236, 18, 18)">
+      <marquee width="100%" direction="left" height="40px" align="right" style="background-color:brown"><font style="color:#faf3f3">SV DEGREE & PG COLLEGE,Anantapur....</font></marquee>
+      </h4>
+  
+    <div class="container text-left text-md-start mt-2">
+      <div class="row mt-2">
+        <div class="col-md-1 col-lg-1 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-3" style="color:rgba(95, 112, 10, 0.747)">
+            Activities
+          </h6>
+          <p>
+            <a href="./events">Student Activities</a>
+            </p>
+            <p>
+              <a href="./images">Photo Gallary</a>
+              </p>
+        </div>
+        <div class="col-md-5 col-lg-3 col-xl-2 mx-auto mb-5">
+          <h6 class="text-uppercase fw-bold mb-3"style="color:rgba(95, 112, 10, 0.747)">
+            Social Media links
+          </h6>
+          <p>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALoAAAB0CAMAAAAFMtgHAAAAb1BMVEX///8Yd/IAZvHr8f7b5fwAcvLu8/4AcPIPdfIAa/FMivNrnPUAbvH8/f8AafFxnvVZjvT1+P5BhfPE1frS3/uxyfl9p/aXtffN3PurxPiqwfjl7f2/0vo9gPOKrfaPs/eevPhYkvQAYPAte/Jjl/Q1+9tvAAAE6ElEQVR4nO2c2ZKqMBCGjRgSEKJRXAGFwfd/xuNS41FMmoaxAxf85c0UBfVN6PSWhMlk1KhRo0aNalLsJevN4XjVYbNO0rhvHpy0l53CvGJSiOgqITir8vCUebpvMlh6cwqVEpKx6+9Xt7+EUqvTxu+bzyY/uVRCvDC/6/oaWLkfIr1frBS3Yf+Kq7xI+yatKT0B410b++2sb9oX6Z2MMNwPReI0FLPRh6sVt5EU0WEQ/iYtg1bgd6ll/1YTF82T0zjy013PgSq+tDDyd0Vlr0az5+2s/E1crPsjzzjKIdok+aYv8l2H+fnOrs79kB+DP435XUHRB/n5r2P+YD+5Jz+ob5BfPfzROXlnp1iXa5uZtbMWyW+S0jQ5ZLB3Se5V+BnK1ZSF5fxyKcNcTqcqqntUyVzmwUtsJOKiWmSpr3Uca61935tlxaL+f/PQHXmBNRe1zAzRfll/ZZEz957gqgrG5dqUYsUf6Ey4MvcVLlcM5p7xdgO6zN2kkQXO0MXWcr8BnYmdC3KfocwlWtgG0oTOpAsvs0UNOl9ZH2BEF3N68hRl6FIm7dCZoK/4cIMugKzKgm41sG/JxznGqdm5AOgsoLb2EyrtsnoXAB285wvSFYacCbByM6OzirbM3uB8em60F9+7Kw3N6II2c8dNUmnIp/SuDFcPWe7ic8qJ6uPKUYPZFtNI/sp2m6KcqBmuqgs+Xj2qeRAcCNEvuMRL1XtDe5RLlUs6cp2jyNm0HkpxU4TldM3rvd1O39FrQV0j60FJ18nDtgHq6P4Ud19E5x5PyJK0ju4h0TlZQI1LZCu9K7pcUXl2jQPojs4UVS7g/1CjQwnnnzRDE3QedarOwBrbIe2MHlCtFWywnaPO6FFBhF5gu7vd0anaYDsIXb7oA/3n9SrwEKikJUOX1TJ8qqpH0yp80coOT1bkgehz7T/l1SJL7P2/5mvA7npB5wv0Y7b2mExmMFBvugV6aEcnm6aQc2yBDkSHz/LqS4JCEh5dA+kEWUiCEgE8egI8ZUqVCEDpFx4dMjuy9AtKevHoUJ0aUCW9UKmBR7/YIxJdqQEVeGh0bek43h9C1zE9fAE9BRoihGV1Yl9GQqMnQP5F2MwAWkho9AxwMIQtJKBxh0Y/2hMhysYdFE/zxfypsp70ls9LCyDlJYuldwb7PJWCP/XzUWo8L0F9U7KAdBeu79mtwKNdGkAuyHRDJ3SNN+F6tt3QiZfBcIuPndAj4sXHiY/pmHZDJ52kN2Ea1V3Q6RfaUdsbOqE72NC+bbb2DugCX9t2l9/sZDqgS3JLvwnIQjqju9lAhdi21hqd527IJ0nTjvu26FLY9yx9WceGRntb9MiRudxUws69JbpwuDF24uegybRDl5XTY3kzcHdJO/TAmaE/BGa/rdCJc10Tu7KPext09wcewN05LdBVD8dMJpOD1d7x6P0c7gFWOdDoyqFDf9faElaR6JJn/XDflDCjo8GhC+70aMyH5qY0EoMuo0vfB06PhqOyCHSuiv6/6ZBePmZrM3pQ7+31o3hTPzDbhC7EMI6FXxXvWIBHj+RuKOA3pbvXRiiALoU4De37DfoQKtGEztXqOJTPH7xKz+bVY+yN6FLwap4MyVTepLPzUqnos78ulFqeTefxhiTtrc+rOnp+Xg/90zZPxTdNnr9Ro0aNGjWqUf8AYuFKDWaDV88AAAAASUVORK5CYII=" width="70"hight="70">
+          <a href="https://www.facebook.com/SVDegreeCollegeATP/">facebook</a>
+        </p>
+        <p>
+          <img src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg?size=338&ext=jpg&ga=GA1.2.510690609.1672134821" width="50"hight="50">
+          <a href="https://www.instagram.com/svdegreecollege/?hl=en">Instagram</a>
+        </p>
+        </div>
+        <div class="col-md-1 col-lg-1 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-3"style="color:rgba(95, 112, 10, 0.747)">
+            Contacts
+          </h6>
+          <p>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACKCAMAAABVe7KfAAAAY1BMVEX///8AAAD+/v7BwcFSUlKmpqaWlpbLy8usrKxkZGQpKSn7+/vm5ube3t6ioqLR0dEzMzPx8fHY2NiPj4+Ghoa2trYLCwucnJxfX18UFBRZWVl1dXVHR0cgICA6Ojpubm59fX1NIY9jAAADDUlEQVR4nO2bi3LqIBCG97ByqSxBSDBe2ur7P+UhifW0NtaYwbZzZv/R3DZhP5bLwAwAsFgsFovF+t8kHpWuEHZq2vldUZykT9OS8/qWHNlHxCGnGMxm+2eCthtJpb13ua8neR+0VkMUCgWiK33aTPS9XfanHfXeyxDkAITnSz9Pl3oZDJr2/fk5FKwHAj7lf/Mp+WP/fAHgT2+U8w+An0t5ean1YEB3OL2C5fzbp4kVoEc7B2lyx3FTtLwD4Kwl9c2nhPT6truRUOgy3mGsCkwSFusQfwfASk1Wq1YPAFjc88XiRwFy3f9hgB+PAAMwAAMwAAMwAAMwAAMwAAMwAAMwAAMwAAMwAAMwAAMwAAMwAAMwAAMwAAMwwH8KsLvni0cArIycLPOIJRz36zsA1pv95TK3bwXYEID1L9cBChFcA1hlmwWIVwjKReDaUi5zWr96HLWudTEAN57FrRNDjOWo+cWVKgJhd+MAEb4C2NlSVUBAGi8CeYrxYdSaipVAzsjrqIt16O161Pia/RcjAFqNOlliCGRGTSsa0MsACIjj/c36dTGO9uzLuD4pN/YwXtBXdAi56pZzL/rUXHO91/2g18YN0KXUr5Xv/sGjuSn0oZzrXybRL/IXt1Ss8c3nZLFYLBaLxSqm8xjndGOH67eHth+tDrsrTxYYjpeDkvljFIfd8NaSPW9hdMNOwkTwbidXd2VNheBJdscAMcQkfLIaXVW5uQROx9YTETbYBO0InQ5779BGb3xO1XtCchi17aJhqY0KbDR0jO6oW12lZDAhpDg3/zVGlRQm0/pKH5pUpSo0XqFqqdo7cMq1vql10zpogwBJTZugJaVR6QqDhCbmW2jszDmCIGlQ1yiTIYOGEAOiciocKiEbDV7a2u7roHIWgwVqoQ6NM0HWtanrKjbeJ0lg/OxJCkqKzpns3hmSybnYZoRYW51LJuNksJq81ZG6aqBzyauQjxAIKGhpk3Sq1jh7mjzxq7eG8faBuNz2O3um8G+uYfsffLi05zaa/12DfPc+fDjDVzsf/wK0DCu8UonVQQAAAABJRU5ErkJggg=="width="50"hight="50">
+            +91 9391812894</p>
+            <p>
+              <img src="data:image/png;base64,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"width="50"hight="50">
+            <a href="info@svdegreecollege.ac.in">info@svdegreecollege.ac.in</a>
+            </p>
+        </div>
+        <div class="col-sm-3 col-md-3 col-xs-12 googlemap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15439.025901401132!2d77.5996008!3d14.6697569!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8b9327805ea6a0df!2sSV%20Degree%20College!5e0!3m2!1sen!2sin!4v1598419683942!5m2!1sen!2sin" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+      </div>
+    </div>
+    </section>
+  
+  <div class="text-center p-2 bg-dark text-light">
+    © 2023 Copyright
+    
+  </div>
+</footer>
+
+
+
